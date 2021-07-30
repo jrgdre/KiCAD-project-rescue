@@ -39,8 +39,8 @@ wasn't anything good.
 We want to:
 
 1. Organize the project in a way, so that we can move it around and share it 
-   (e.g. via GitHub), without breaking it, every time the set-up of new location
-   is not an exact copy of our location.
+   (e.g. via GitHub), without breaking it, every time the set-up of the new 
+   location is not an exact copy of our location.
    
 2. Freeze projects in different release states, to be able to review and approve
    revisions using a proper management process and compare different revisions.
@@ -105,7 +105,7 @@ and footprint libraries and your project still loads without problems.
 
 ### Rescuing the schematic
 
-4. Load your project into KiCad and try to open the project.sch file.
+4. Load your project into KiCad and try to open the `project.sch` file.
    Most likely all hell breaks loose. 
    
    DON'T PANIC!
@@ -114,7 +114,7 @@ and footprint libraries and your project still loads without problems.
    OK.
    
    Finally there will be a `Project Rescue Helper` dialogue. Ignore the 
-   description. It's only confusing. Just make sure to press `*OK*`!
+   description. It's only confusing. Just make sure to press `OK`!
    
 What did just happen? Despite my rant in the second chapter there is a local 
 copy at least of the symbols used in the schematic. It's called 
@@ -138,7 +138,7 @@ delete it.
 
 For the footprints there is no automatic backup or rescue function, I know off.
 But as long as you still have a good copy of the `project.pcb` file, you can get
-you footprints back.
+your footprints back.
 
 - Create a project local footprint library directory (I usually call it 
   `fp-lib.pretty`).
@@ -147,11 +147,11 @@ you footprints back.
 
 - Open the Footprint editor.
 
-- Add the `fp-lib.pretty` to the libraries as a `*Project*` library.
+- Add the `fp-lib.pretty` to the libraries as a `Project` library.
 
 - Use the `Load Footprints from PCB ...` function in the `Tools` menu:
 
-  - Select one component after the other and save their footprints to you local
+  - Select one component after the other and save their footprints to your local
     project library (e.g. `fp-lib`)
 	
 Now you can open the `project.sch` and the footprint assignment editor.
