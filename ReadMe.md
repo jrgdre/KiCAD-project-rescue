@@ -142,12 +142,16 @@ easy.
 - Open the `*.kicad_pcb` file of you project and go to the menu
   `File|Archive Footprints|Create New Library and Archive Footprints...`
 
-- Choose a name and a location for the new library.
-  Remember! The idea is to have it in the project directory.
+- Choose a name (e.g. `fp-lib.pretty`) and a location for the new library.
+  But, remember: The idea is to have it in the project directory!
   
 - Make it a `Project` library.
   
-All references in the project are automatically adjusted to use your new library.
+- Now open the `project.sch` and the footprint assignment editor.
+
+- Delete all footprint associations
+
+- Assign the footprints using the project local library (e.g. `fp-lib`).
 
 This also works, if all you have left is the `*.kicad_pcb` file. No access to the 
 original footprints libraries is needed.
