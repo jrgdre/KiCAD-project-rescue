@@ -136,29 +136,21 @@ delete it.
 
 ### Rescuing the footprints
 
-For the footprints there is no automatic backup or rescue function, I know off.
-But as long as you still have a good copy of the `project.pcb` file, you can get
-your footprints back.
+I have KiCAD version 5.1.9 and with that one rescuing your footprints is pretty
+easy.
 
-- Create a project local footprint library directory (I usually call it 
-  `fp-lib.pretty`).
+- Open the `*.kicad_pcb` file of you project and go to the menu
+  `File|Archive Footprints|Create New Library and Archive Footprints...`
 
-- Open the `*.pcb` file
+- Choose a name and a location for the new library.
+  Remember! The idea is to have it in the project directory.
+  
+- Make it a `Project` library.
+  
+All references in the project are automatically adjusted to use your new library.
 
-- Open the Footprint editor.
-
-- Add the `fp-lib.pretty` to the libraries as a `Project` library.
-
-- Use the `Load Footprints from PCB ...` function in the `Tools` menu:
-
-  - Select one component after the other and save their footprints to your local
-    project library (e.g. `fp-lib`)
-	
-Now you can open the `project.sch` and the footprint assignment editor.
-
-- Delete all footprint associations
-
-- Assign the footprints using the project local library (e.g. `fp-lib`).
+This also works, if all you have left is the `*.kicad_pcb` file. No access to the 
+original footprints libraries is needed.
 
 ### Rescuing Data-sheets and 3D Models
 
