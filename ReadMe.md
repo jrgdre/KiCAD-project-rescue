@@ -68,7 +68,7 @@ information for the project here. I use:
   
 ```
 
-and put this under revision control (e.g. and scm like git).
+and put this under revision control (e.g. a scm like git).
 
 2. Use project local data only
 
